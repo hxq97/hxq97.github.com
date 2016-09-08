@@ -1,0 +1,111 @@
+﻿		*{ margin: 0; padding: 0;} 
+		a{ text-decoration:none;font-size:16px; font-family:"微软雅黑";}
+		body{background:#383535 url(img/tuwen.png) repeat; font-size: 14px; font-family: "微软雅黑"; color: #fff;overflow:hidden; }
+		ul,ol{list-style: none;}
+		img{ border:none; display:block;}
+		#box{ width: 100%; transition:all 1s ease-in 0s;}
+		.page{ width: 100%; height: 100%; position: relative; overflow:hidden;}
+		.go0{
+			-ms-transform:translate3d(0,0,0);
+			-o-transform:translate3d(0,0,0);
+			-moz-transform:translate3d(0,0,0);
+			-webkit-transform:translate3d(0,0,0);
+			transform:translate3d(0,0,0);
+		}
+
+		.go1{
+			-ms-transform:translate3d(0,-100%,0);
+			-o-transform:translate3d(0,-100%,0);
+			-moz-transform:translate3d(0,-100%,0);
+			-webkit-transform:translate3d(0,-100%,0);
+			transform:translate3d(0,-100%,0);
+		}
+		.go2{
+			-ms-transform:translate3d(0,-200%,0);
+			-o-transform:translate3d(0,-200%,0);
+			-moz-transform:translate3d(0,-200%,0);
+			-webkit-transform:translate3d(0,-200%,0);
+			transform:translate3d(0,-200%,0);
+		}
+		.go3{
+			-ms-transform:translate3d(0,-300%,0);
+			-o-transform:translate3d(0,-300%,0);
+			-moz-transform:translate3d(0,-300%,0);
+			-webkit-transform:translate3d(0,-300%,0);
+			transform:translate3d(0,-300%,0);
+		}
+		.go4{
+			-ms-transform:translate3d(0,-400%,0);
+			-o-transform:translate3d(0,-400%,0);
+			-moz-transform:translate3d(0,-400%,0);
+			-webkit-transform:translate3d(0,-400%,0);
+			transform:translate3d(0,-400%,0);
+		}
+		.clearfix:after { content: ""; display: block; height: 0; clear: both; visibility: hidden; }
+		.clearfix { display: inline-table; }
+		*html .clearfix { height: 1%; }
+		.clearfix { display: block; }
+		*+html .clearfix { min-height:1%; }
+		/* 警告页面设置 */
+		.jinggao{ width:100%; height:100%; position:absolute; background:#4aabb1; top:0; left:0; color:#FFF;  z-index:999; text-align:center;}
+		.jinggao p{ position:absolute; display:block; width:300px; line-height:18px; top:30%; left:50%; margin:0 0 0 -150px; z-index:1;}
+		.jinggao span{ width:180px; height:30px; display:block; line-height:30px; border-radius:10px; border:1px solid #FFF; position:absolute; left:50%; top:50%; margin:-15px 0 0 -90px;color:#FFF!important; z-index:2; cursor:pointer; }
+		.jinggao span:hover{ border-color:#FC0; color:#FC0; }
+		.jinggao img{ position:absolute; display:block; width:400px; height:300px; bottom:0; left:50%; margin:0 0 0 -200px;}
+		/* 页面一的设置 */
+		
+		.one{ background:url(img/logo.png) no-repeat center center; width:100%; height:100%;}
+		.logo{ background:url(img/logo.png) no-repeat center center;width:300px; height:460px; position:absolute; left:50%; top:-460px;margin-left:-150px;}
+		.hongd{ width:30px; height:30px; position:absolute; top:130px; left:50%; margin-left:-270px;}
+		.one{ background-image:url(img/blink.png);}
+		.one ul{ width:100%; height:100%;}
+		.one ul li{ width:36%; height:36%; margin:7%; background:url(img/anniu.png) no-repeat left top;}
+		.one .an1,.one .an3{ float:left;}
+		.one .an2,.one .an4{ float:right; background-position:right top;}
+		/* 页面二的设置 */
+		.two .about_title{ width:150px; height:150px; background:url(img/aboutme.png) no-repeat; position:absolute; top:10px; left:-150px;}
+		.two .about_bg{width:100%; height:100%;position:absolute; left:-100%; top:0;}
+		.two .about{ width:100%; height:100%; position:absolute; top:0; right:-100%;}	
+		.two .about ul{ width:1000px; height:230px; position:absolute; top:50%; left:50%; margin:-115px 0px 0px -500px; background:url(img/about_ul.png) no-repeat center center;}
+		.two .about ul li{ width:226px; height:200px;border-radius:15px; float:left;overflow:hidden; position:absolute; top:12px; left:12px;}
+		.two .about ul li img{position:absolute; top:0; left:0;}
+		.two .about ul li span{border-radius:15px; display:block; width:226px; height:200px; z-index:5;position:absolute; top:0; left:0; background:url(img/about_boxLight.png) no-repeat center center;}
+		/* 页面3——案例展示 */
+		.work_nav{ width:150px; height:300px; background:url(img/workBtn_bg.png) no-repeat; position:absolute; top:-300px; left:20px; z-index:3;}
+		.work_nav span{ display:block; width:115px; height:58px; background:#97c41f; position:absolute; top:25px; left:19px; z-index:4;}
+		.work_nav ol{ width:150px; height:300px; background:url(img/workBtn.png) no-repeat; position:absolute; z-index:5; top:0; left:0;}
+		.work_nav ol li{ margin:36px 0 0 22px; width:100px; height:30px; cursor:pointer;}
+		.work_top{ width:300px; height:200px; position:absolute; top:-200px; right:200px; background:url(img/work_top.png) center center; z-index:3;}
+		.anli_box{ width:1000px; height:370px; padding:50px 0 0 0;/*  background:#e5e5e5; border:1px solid #FFF;  */background:url(img/work_bg.png) no-repeat center bottom;overflow:hidden; border-radius:10px; position:absolute; top:120px; left:-1000px;  margin:0;}
+		.anli{ width:960px; height:320px; margin:0 0 0 27px; overflow:hidden; position:relative;}
+		.anli ul{ width:960px; height:auto; overflow:hidden; position:absolute; top:0px; left:0;}
+		.anli ul li{ width:960px;  margin:0 10px 10px 0;}
+		.anli ul li a{ background:#000; display:block;width:230px; height:150px; float:left; margin:0px 10px 10px 0px; position:relative; overflow:hidden;}
+		.anli ul li a span{ position:absolute; width:230px; height:38px; display:block; color:#FFF; background:rgba(0,0,0,0.5); bottom:-38px; left:0; text-align:center; line-height:38px; z-index:3; font-size:14px; font-family:"新宋体";}
+		/* 页面四的设置*/
+		.box_four{ width:980px; height:95%; margin:5% auto 0 auto; position:relative;}
+		.first_box{ width:335px; height:500px; position:absolute; top:50%; left:-335px; margin:-250px 0 0 0;/* z-index:1; */}
+		.first_box .bigbox{ width: 335px; height: 335px;background:url(img/zhuandong.png) no-repeat center center; /* position: absolute; left:50%; top:0px; margin-left:-168px; */}
+		.first_box .zhuan{ width:100%; height:100%; background:url(img/zhizhen.png) no-repeat center center; -o-transition:all 3s ease-in;-webkit-transition:all 3s ease-in 0s; -ms-transition:all 3s ease-in 0s; -moz-transition:all 3s ease-in 0s; transition:all 3s ease-in 0s;}
+		.zhenzhuan{	-ms-transform:rotate(720deg); -webkit-transform:rotate(720deg); -o-transform:rotate(720deg); -moz-transform:rotate(720deg); transform:rotate(720deg);}
+		.box_four .banner_box{ width:600px; height:550px; overflow:hidden; background:url(img/service_banner_bg.png) no-repeat left top; position:absolute; top:0px; right:-542px; }
+		.banner{ width:523px; height:600px; overflow:hidden;  margin:15px 0px 0px 12px;position:relative;}
+		.banner ul{ width:2615px; height:490px; position:absolute; top:0px; left:0px;}
+		.banner ul li{ width:523px; height:490px; float:left;}
+		.banner_box ol{ width:140px; height:25px; position:absolute; bottom:10px; left:50%; margin:0 0 0 -70px;}
+		.banner_box ol li{ background:url(img/star01.png) no-repeat; width:25px; height:25px; float:left; margin:5px; cursor:pointer;}
+		.banner_box ol .now{ background-image:url(img/star02.png);}
+		/* 页面五的设置 */
+		.contact{ width:986px; height:592px; position:absolute; bottom:-600px; left:50%; margin-left:-492px;font-size:12px; font-family:"新宋体"; background:url(img/wechat_bg.png) no-repeat center center;}
+		.contactIn{width:787px; height:205px; background:url(img/zhijin.png) no-repeat; overflow:hidden; position:absolute;  top:250px; left:50%; margin:0 0 0 -393.5px; /*实际宽度是787px*/}
+		.contactIn ul{width:787px; height:135px; margin:32px 0 0 9px;}
+		.contactIn ul li{ width:170px; height:140px;float:left; overflow:hidden; text-align:center; padding:5px 0 0 0; }
+		.contactIn ul li span{ display:block; width:250px; height:140px;color:#000;border-right:1px dashed #999999;float:right; }
+		.contactIn ul li span a{ color:#69F; font-size:14px;}
+		.contactIn ul li span h3{ font-family:"微软雅黑"; font-weight:normal;}
+		.contactIn .jiathis_style{ width:200px; height:100px; float:right;}
+		.contactIn .jiathis_style a{ float:left; width:20px;}
+		.foot{ width:300px;text-align:center; color:#999; position:absolute; bottom:10px; left:50%; margin:0 0 0 -150px;}
+		.circle{ position: fixed; width:41px; height:309px; background:url(img/lunbo.png) no-repeat top left; right:35px; padding-top:45px;}
+		.circle ul li{ width:40px; height:30px;  margin:11px 0;cursor: pointer; color:#FFF;padding:0px 35px; line-height:30px; opacity:0.5;}
+		.circle ul li.current{ opacity:1.0; color:#83baff;background:url(img/lunboqi.png) no-repeat 15px top;}
